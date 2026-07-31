@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>揺木わかな Official Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<img src="icon.png" class="icon" alt="アイコン">
+
+<h1 id="name">揺木 わかな</h1>
+
+<p>小説家・宅録ナレーター</p>
+
+<nav>
+
+<button onclick="showPage('home')">🏠 ホーム</button>
+
+<button onclick="showPage('novel')">📚 小説</button>
+
+<button onclick="showPage('voice')">🎙️ ナレーション</button>
+
+<button onclick="showPage('gallery')">🖼️ ギャラリー</button>
+
+<button onclick="showPage('video')">🎬 動画</button>
+
+<button onclick="showPage('audio')">🎵 音声</button>
+
+<button onclick="showPage('music')">🎼 音楽</button>
+
+<button onclick="showPage('profile')">👤 プロフィール</button>
+
+<button onclick="showPage('news')">📰 お知らせ</button>
+
+<button onclick="showPage('contact')">✉️ お問い合わせ</button>
+
+</nav>
+
+</header><div style="text-align:center; margin:20px 0;">
+
+<button id="bgmButton" onclick="toggleBGM()" class="link-button">
+🎵 BGMを再生
+</button>
+
+<audio id="bgm" loop>
+    <source src="bgm.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<main>
+
+<section id="home" class="page">
+
+<h2>🌿 ようこそ</h2>
+
+<p>
+揺木わかなの公式ホームページへようこそ。
+</p>
+
+<p>
+小説家・宅録ナレーターとして活動しています。
+</p>
+
+</section>
+
+<section id="novel" class="page" style="display:none;">
+
+<h2>📚 小説</h2>
+
+<div class="card">
+
+<img src="images/novel1.jpg" alt="作品1" style="width:160px;border-radius:15px;display:block;margin:0 auto 20px;">
+
+<h3>📖 小説家になろう</h3>
+
+<p>
+
+揺木わかなの公開している小説。
+
+心がほっとする物語をお楽しみください。
+
+</p>
+
+<a class="link-button"
+href="https://yomou.syosetu.com/search.php?word=%E6%8F%BA%E6%9C%A8%E3%82%8F%E3%81%8B%E3%81%AA&order=new"
+target="_blank">
+
+📖 作品一覧を見る
+
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="images/novel2.jpg" alt="カクヨム作品" style="width:160px;border-radius:15px;display:block;margin:0 auto 20px;">
+
+<h3>📚 カクヨム</h3>
+
+<p>
+
+カクヨムで公開中の作品です。
+
+ぜひこちらもご覧ください。
+
+</p>
+
+<a class="link-button"
+href="https://kakuyomu.jp/users/wakana5"
+target="_blank">
+
+📚 カクヨムを見る
+
+</a>
+
+</div>
+
+</section>
+
+<section id="voice" class="page" style="display:none;">
+
+<h2>🎙️ ナレーション</h2>
+
+<p>
+
+宅録ナレーターとして活動しています。
+
+</p>
+
+<p>
+
+ボイスサンプルや収録機材などを掲載予定です。
+
+</p>
+</section>
+
+<section id="gallery" class="page" style="display:none;">
+
+<h2>🖼️ ギャラリー</h2>
+
+<p>
+イラスト・作品・写真などを掲載しています。
+</p>
+
+<div class="gallery">
+
+
+<img src="images/gallery01.jpg" alt="画像1">
+<img src="images/gallery02.jpg" alt="画像2">
+<img src="images/gallery03.jpg" alt="画像3">
+<img src="images/gallery04.jpg" alt="画像4">
+<img src="images/gallery05.jpg" alt="画像5">
+<img src="images/gallery06.jpg" alt="画像6">
+<img src="images/gallery07.jpg" alt="画像7">
+<img src="images/gallery08.jpg" alt="画像8">
+<img src="images/gallery09.jpg" alt="画像9">
+<img src="images/gallery10.jpg" alt="画像10">
+
+<img src="images/gallery11.jpg" alt="画像11">
+<img src="images/gallery12.jpg" alt="画像12">
+<img src="images/gallery13.jpg" alt="画像13">
+<img src="images/gallery14.jpg" alt="画像14">
+<img src="images/gallery15.jpg" alt="画像15">
+<img src="images/gallery16.jpg" alt="画像16">
+<img src="images/gallery17.jpg" alt="画像17">
+<img src="images/gallery18.jpg" alt="画像18">
+<img src="images/gallery19.jpg" alt="画像19">
+<img src="images/gallery20.jpg" alt="画像20">
+
+<img src="images/gallery21.jpg" alt="画像21">
+<img src="images/gallery22.jpg" alt="画像22">
+<img src="images/gallery23.jpg" alt="画像23">
+<img src="images/gallery24.jpg" alt="画像24">
+<img src="images/gallery25.jpg" alt="画像25">
+<img src="images/gallery26.jpg" alt="画像26">
+<img src="images/gallery27.jpg" alt="画像27">
+<img src="images/gallery28.jpg" alt="画像28">
+<img src="images/gallery29.jpg" alt="画像29">
+<img src="images/gallery30.jpg" alt="画像30">
+
+<img src="images/gallery31.jpg" alt="画像31">
+<img src="images/gallery32.jpg" alt="画像32">
+<img src="images/gallery33.jpg" alt="画像33">
+<img src="images/gallery34.jpg" alt="画像34">
+<img src="images/gallery35.jpg" alt="画像35">
+<img src="images/gallery36.jpg" alt="画像36">
+<img src="images/gallery37.jpg" alt="画像37">
+<img src="images/gallery38.jpg" alt="画像38">
+<img src="images/gallery39.jpg" alt="画像39">
+<img src="images/gallery40.jpg" alt="画像40">
+
+<img src="images/gallery41.jpg" alt="画像41">
+<img src="images/gallery42.jpg" alt="画像42">
+<img src="images/gallery43.jpg" alt="画像43">
+<img src="images/gallery44.jpg" alt="画像44">
+<img src="images/gallery45.jpg" alt="画像45">
+<img src="images/gallery46.jpg" alt="画像46">
+<img src="images/gallery47.jpg" alt="画像47">
+<img src="images/gallery48.jpg" alt="画像48">
+<img src="images/gallery49.jpg" alt="画像49">
+<img src="images/gallery50.jpg" alt="画像50">
+
+</div>
+
+</section>
+<section id="video" class="page" style="display:none;">
+
+<h2>🎬 動画</h2>
+
+<p>
+PV・ナレーション・創作動画などを掲載しています。
+</p>
+
+<div class="card">
+
+<h3>🎥 動画１</h3>
+
+<video controls width="100%">
+
+<source src="videos/movie01.mp4" type="video/mp4">
+
+お使いのブラウザは動画に対応していません。
+
+</video>
+
+</div>
+
+<div class="card">
+
+<h3>🎥 動画２</h3>
+
+<video controls width="100%">
+
+<source src="videos/movie02.mp4" type="video/mp4">
+
+お使いのブラウザは動画に対応していません。
+
+</video>
+
+</div>
+
+</section>
+
+<section id="audio" class="page" style="display:none;">
+
+<h2>🎵 音声ライブラリ</h2>
+
+<p>
+ボイスサンプルや朗読作品を掲載しています。
+</p>
+
+<div class="card">
+
+<h3>🎙️ ボイスサンプル１</h3>
+
+<audio controls>
+
+<source src="audio/sample01.wav" type="audio/wav">
+
+<source src="audio/sample01.mp3" type="audio/mpeg">
+
+お使いのブラウザでは再生できません。
+
+</audio>
+
+</div>
+
+<div class="card">
+
+<h3>🎙️ ボイスサンプル２</h3>
+
+<audio controls>
+
+<source src="audio/sample02.wav" type="audio/wav">
+
+<source src="audio/sample02.mp3" type="audio/mpeg">
+
+お使いのブラウザでは再生できません。
+
+</audio>
+
+</div>
+
+</section>
+
+<section id="music" class="page" style="display:none;">
+
+<h2>🎼 音楽ライブラリ</h2>
+
+<p>
+BGMを自由に再生できます。
+</p>
+
+<div class="card">
+
+<h3>🎵 BGM 01</h3>
+
+<p>お気に入りのBGMです。</p>
+
+<audio controls>
+
+<source src="music/bgm01.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<div class="card">
+
+<h3>🎵 BGM 02</h3>
+
+<p>お気に入りのBGMです。</p>
+
+<audio controls>
+
+<source src="music/bgm02.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<div class="card">
+
+<h3>🎵 BGM 03</h3>
+
+<p>お気に入りのBGMです。</p>
+
+<audio controls>
+
+<source src="music/bgm03.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+</section>
+
+<section id="profile" class="page" style="display:none;">
+
+<h2>👤 プロフィール</h2>
+
+<div class="card">
+
+<h3>揺木 わかな</h3>
+
+<p>
+
+小説家・宅録ナレーター。
+
+優しい物語と、心に届くナレーションを目指して活動しています。
+
+</p>
+
+</div>
+
+</section>
+
+<section id="news" class="page" style="display:none;">
+
+<h2>📰 お知らせ</h2>
+
+<div class="card">
+
+<p>
+
+最新の更新情報はこちらに掲載します。
+
+</p>
+
+</div>
+
+</section>
+
+<section id="contact" class="page" style="display:none;">
+
+<h2>✉️ お問い合わせ</h2>
+
+<div class="card">
+
+<p>
+
+ご依頼・お問い合わせは準備中です。
+
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+
+<img id="lightbox-img" src="" alt="拡大画像">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
