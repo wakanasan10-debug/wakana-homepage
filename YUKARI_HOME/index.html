@@ -29,12 +29,6 @@
 
 <button onclick="showPage('gallery')">🖼️ ギャラリー</button>
 
-<button onclick="showPage('video')">🎬 動画</button>
-
-<button onclick="showPage('audio')">🎵 音声</button>
-
-<button onclick="showPage('music')">🎼 音楽</button>
-
 <button onclick="showPage('profile')">👤 プロフィール</button>
 
 <button onclick="showPage('news')">📰 お知らせ</button>
@@ -43,17 +37,7 @@
 
 </nav>
 
-</header><div style="text-align:center; margin:20px 0;">
-
-<button id="bgmButton" onclick="toggleBGM()" class="link-button">
-🎵 BGMを再生
-</button>
-
-<audio id="bgm" loop>
-    <source src="bgm.mp3" type="audio/mpeg">
-</audio>
-
-</div>
+</header>
 
 <main>
 
@@ -77,23 +61,17 @@
 
 <div class="card">
 
-<img src="images/novel1.jpg" alt="作品1" style="width:160px;border-radius:15px;display:block;margin:0 auto 20px;">
-
 <h3>📖 小説家になろう</h3>
 
 <p>
-
-揺木わかなの公開している小説。
-
-心がほっとする物語をお楽しみください。
-
+揺木わかなが公開している作品はこちらから読めます。
 </p>
 
 <a class="link-button"
 href="https://yomou.syosetu.com/search.php?word=%E6%8F%BA%E6%9C%A8%E3%82%8F%E3%81%8B%E3%81%AA&order=new"
 target="_blank">
 
-📖 作品一覧を見る
+作品一覧を見る
 
 </a>
 
@@ -101,23 +79,17 @@ target="_blank">
 
 <div class="card">
 
-<img src="images/novel2.jpg" alt="カクヨム作品" style="width:160px;border-radius:15px;display:block;margin:0 auto 20px;">
-
 <h3>📚 カクヨム</h3>
 
 <p>
-
-カクヨムで公開中の作品です。
-
-ぜひこちらもご覧ください。
-
+カクヨムで公開中の作品はこちらです。
 </p>
 
 <a class="link-button"
 href="https://kakuyomu.jp/users/wakana5"
 target="_blank">
 
-📚 カクヨムを見る
+カクヨムを見る
 
 </a>
 
@@ -211,137 +183,6 @@ target="_blank">
 </div>
 
 </section>
-<section id="video" class="page" style="display:none;">
-
-<h2>🎬 動画</h2>
-
-<p>
-PV・ナレーション・創作動画などを掲載しています。
-</p>
-
-<div class="card">
-
-<h3>🎥 動画１</h3>
-
-<video controls width="100%">
-
-<source src="videos/movie01.mp4" type="video/mp4">
-
-お使いのブラウザは動画に対応していません。
-
-</video>
-
-</div>
-
-<div class="card">
-
-<h3>🎥 動画２</h3>
-
-<video controls width="100%">
-
-<source src="videos/movie02.mp4" type="video/mp4">
-
-お使いのブラウザは動画に対応していません。
-
-</video>
-
-</div>
-
-</section>
-
-<section id="audio" class="page" style="display:none;">
-
-<h2>🎵 音声ライブラリ</h2>
-
-<p>
-ボイスサンプルや朗読作品を掲載しています。
-</p>
-
-<div class="card">
-
-<h3>🎙️ ボイスサンプル１</h3>
-
-<audio controls>
-
-<source src="audio/sample01.wav" type="audio/wav">
-
-<source src="audio/sample01.mp3" type="audio/mpeg">
-
-お使いのブラウザでは再生できません。
-
-</audio>
-
-</div>
-
-<div class="card">
-
-<h3>🎙️ ボイスサンプル２</h3>
-
-<audio controls>
-
-<source src="audio/sample02.wav" type="audio/wav">
-
-<source src="audio/sample02.mp3" type="audio/mpeg">
-
-お使いのブラウザでは再生できません。
-
-</audio>
-
-</div>
-
-</section>
-
-<section id="music" class="page" style="display:none;">
-
-<h2>🎼 音楽ライブラリ</h2>
-
-<p>
-BGMを自由に再生できます。
-</p>
-
-<div class="card">
-
-<h3>🎵 BGM 01</h3>
-
-<p>お気に入りのBGMです。</p>
-
-<audio controls>
-
-<source src="music/bgm01.mp3" type="audio/mpeg">
-
-</audio>
-
-</div>
-
-<div class="card">
-
-<h3>🎵 BGM 02</h3>
-
-<p>お気に入りのBGMです。</p>
-
-<audio controls>
-
-<source src="music/bgm02.mp3" type="audio/mpeg">
-
-</audio>
-
-</div>
-
-<div class="card">
-
-<h3>🎵 BGM 03</h3>
-
-<p>お気に入りのBGMです。</p>
-
-<audio controls>
-
-<source src="music/bgm03.mp3" type="audio/mpeg">
-
-</audio>
-
-</div>
-
-</section>
 
 <section id="profile" class="page" style="display:none;">
 
@@ -399,18 +240,8 @@ BGMを自由に再生できます。
 
 </div>
 
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-
-<img id="lightbox-img" src="" alt="拡大画像">
-
-</div>
-
 <script src="script.js"></script>
 
 </body>
 
 </html>
-
-
-
-
