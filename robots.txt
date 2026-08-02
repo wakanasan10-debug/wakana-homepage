@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wakanasan10-debug.github.io/wakana-homepage/sitemap.xml
