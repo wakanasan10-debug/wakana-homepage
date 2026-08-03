@@ -4,10 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>揺木わかな Official Website</title>
+
+<meta name="description" content="揺木わかな Official Website。プロフィール、活動内容、お知らせなどを掲載しています。">
+
+<meta name="keywords" content="揺木わかな, YUKARI WAKANA, Official Website, プロフィール, 活動">
+
+<meta name="author" content="揺木わかな">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://wakanasan10-debug.github.io/wakana-homepage/">
+
+<meta property="og:title" content="揺木わかな Official Website">
+<meta property="og:description" content="揺木わかなの公式ホームページです。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wakanasan10-debug.github.io/wakana-homepage/">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
 
 <div class="container">
 
@@ -19,6 +35,33 @@
 
 <p>小説家・宅録ナレーター</p>
 
+<div class="bgm-box">
+
+<h3>🎵 BGM</h3>
+
+<select id="bgmSelect">
+</select>
+
+<div class="bgm-buttons">
+<button onclick="playBGM()">▶ 再生</button>
+<button onclick="pauseBGM()">⏸ 一時停止</button>
+<button onclick="stopBGM()">⏹ 停止</button>
+</div>
+
+<div class="volume-box">
+🔊 音量
+<input type="range" id="volumeControl"
+min="0" max="1" step="0.1" value="0.5">
+</div>
+
+<p id="nowPlaying">
+♪ 曲を選択してください
+</p>
+
+<audio id="bgmPlayer"></audio>
+
+</div>
+
 <nav>
 
 <button onclick="showPage('home')">🏠 ホーム</button>
@@ -29,12 +72,6 @@
 
 <button onclick="showPage('gallery')">🖼️ ギャラリー</button>
 
-<button onclick="showPage('video')">🎬 動画</button>
-
-<button onclick="showPage('audio')">🎵 音声</button>
-
-<button onclick="showPage('music')">🎼 音楽</button>
-
 <button onclick="showPage('profile')">👤 プロフィール</button>
 
 <button onclick="showPage('news')">📰 お知らせ</button>
@@ -43,17 +80,7 @@
 
 </nav>
 
-</header><div style="text-align:center; margin:20px 0;">
-
-<button id="bgmButton" onclick="toggleBGM()" class="link-button">
-🎵 BGMを再生
-</button>
-
-<audio id="bgm" loop>
-    <source src="bgm.mp3" type="audio/mpeg">
-</audio>
-
-</div>
+</header>
 
 <main>
 
@@ -62,81 +89,12 @@
 <h2>🌿 ようこそ</h2>
 
 <p>
-揺木わかなの
-関連特筆記録掲載地点へようこそ。
-
-<p>
-来てくれた事に感謝して、
-ささやかに心意表明する。<p>
-
-
-<p>
-
-『これからの糧となる御心添え、光栄の至り。』<p>
-
-<p>
-
-『快適な心境となれたことの通知する。』<p>
-
-
-『えやえや　こさこさ』（心よりの感謝添える）
-
-<p>
-<p>
-
-
-ここに、こちらの過去の活躍と、
-経験の記録残しておく事にする。<p>
-
-
-<p>
-そして、おしらせの欄に、<p>
-
-<p>
-これから起こり得る事の、<p>
-
-<p>
-想定可能性な予想書いて、<p>
-<p>
-
-形成させれた到達地点に、<p><p>
-
-
-こちらの製作した創作作品、<p>
-<p>
-
-歴史に浸れる経歴掲載する。<p>
-
-<p><p>
-小説家・宅録ナレーター。
+揺木わかなの公式ホームページへようこそ。
 </p>
 
-
-
-<button onclick="showPage('support')">💖 応援</button><p>
-
 <p>
-
-作品の閲覧感謝します。
-
-もし余裕あったら、応援してくれたら嬉しいな。
-ここに寄付するURLの掲載しておくね。
-
+小説家・宅録ナレーターとして活動しています。
 </p>
-
-<a class="link-button"
-href="https://ofuse.me/wakanatyan"
-target="_blank">
-
-💖 応援はこちら
-
-</a>
-<p>
-https://yurakiwakana5.booth.pm/
-<p>
-</p>
-
-
 
 </section>
 
@@ -146,26 +104,17 @@ https://yurakiwakana5.booth.pm/
 
 <div class="card">
 
-<img src="images/novel1.jpg" alt="作品1" style="width:160px;border-radius:15px;display:block;margin:0 auto 20px;">
-
 <h3>📖 小説家になろう</h3>
 
 <p>
-
-揺木わかなの公開している小説。
-
-久留里地方の音歌市とことのはタウンは、風習や気質等についてはとても大切にしていた。
-確定したこと変えたりしない強い意志貫いて、話し方とか作法に気を使う気風は浸透している。
-返り点や余計な言い回しを避ける特有の言い方は意図的には変更しなく、個性引き立てる。
-
-
+揺木わかなが公開している作品はこちらから読めます。
 </p>
 
 <a class="link-button"
 href="https://yomou.syosetu.com/search.php?word=%E6%8F%BA%E6%9C%A8%E3%82%8F%E3%81%8B%E3%81%AA&order=new"
 target="_blank">
 
-📖 作品一覧を見る
+作品一覧を見る
 
 </a>
 
@@ -173,22 +122,17 @@ target="_blank">
 
 <div class="card">
 
-<img src="images/novel2.jpg" alt="カクヨム作品" style="width:160px;border-radius:15px;display:block;margin:0 auto 20px;">
-
 <h3>📚 カクヨム</h3>
 
 <p>
-
-カクヨムにて公開中の作品。
-
-
+カクヨムで公開中の作品はこちらです。
 </p>
 
 <a class="link-button"
 href="https://kakuyomu.jp/users/wakana5"
 target="_blank">
 
-📚 カクヨムを見る
+カクヨムを見る
 
 </a>
 
@@ -202,7 +146,7 @@ target="_blank">
 
 <p>
 
-ナレーションする宅録ナレーター。
+宅録ナレーターとして活動しています。
 
 </p>
 
@@ -282,140 +226,6 @@ target="_blank">
 </div>
 
 </section>
-<section id="video" class="page" style="display:none;">
-
-<h2>🎬 動画</h2>
-
-<p>
-PV・ナレーション・創作動画等掲載しています。
-</p>
-
-<div class="card">
-
-<h3>🎥 動画１</h3>
-
-<video controls width="100%">
-
-<source src="videos/movie01.mp4" type="video/mp4">
-
-お使いのブラウザは動画に対応していません。
-
-</video>
-
-</div>
-
-<div class="card">
-
-<h3>🎥 動画２</h3>
-
-<video controls width="100%">
-
-<source src="videos/movie02.mp4" type="video/mp4">
-
-お使いのブラウザは動画に対応していません。
-
-</video>
-
-</div>
-
-</section>
-
-<section id="audio" class="page" style="display:none;">
-
-<h2>🎵 音声ライブラリ</h2>
-
-<p>
-ボイスサンプルや朗読作品を掲載しています。
-</p>
-
-<div class="card">
-
-<h3>🎙️ ボイスサンプル１</h3>
-
-<audio controls>
-
-<source src="audio/sample01.wav" type="audio/wav">
-
-<source src="audio/sample01.mp3" type="audio/mpeg">
-
-お使いのブラウザでは再生できません。
-
-</audio>
-
-</div>
-
-<div class="card">
-
-<h3>🎙️ ボイスサンプル２</h3>
-
-<audio controls>
-
-<source src="audio/sample02.wav" type="audio/wav">
-
-<source src="audio/sample02.mp3" type="audio/mpeg">
-
-お使いのブラウザでは再生できません。
-
-</audio>
-
-</div>
-
-</section>
-
-<section id="music" class="page" style="display:none;">
-
-
-</div>
-
-</section>
-
-<p>
-BGMの再生。
-</p>
-
-<div class="card">
-
-<h3>🎵 BGM 01</h3>
-
-<p>著作権、こちらにある、お気に入りのBGMです。</p>
-
-<audio controls>
-
-<source src="music/bgm01.mp3" type="audio/mpeg">
-
-</audio>
-
-</div>
-
-<div class="card">
-
-<h3>🎵 BGM 02</h3>
-
-<p>著作権、こちらにある、お気に入りのBGMです。</p>
-
-<audio controls>
-
-<source src="music/bgm02.mp3" type="audio/mpeg">
-
-</audio>
-
-</div>
-
-<div class="card">
-
-<h3>🎵 BGM 03</h3>
-
-<p>著作権、こちらにある、お気に入りのBGMです。</p>
-
-<audio controls>
-
-<source src="music/bgm03.mp3" type="audio/mpeg">
-
-</audio>
-
-</div>
-
-</section>
 
 <section id="profile" class="page" style="display:none;">
 
@@ -427,17 +237,9 @@ BGMの再生。
 
 <p>
 
-小説家・宅録ナレーター。<p>
-<p>
+小説家・宅録ナレーター。
 
-
-長期的な安定性視野に入れて、見落としのないように取り組み、効率よく先に進めること意識しつつ、規定に沿うように遂行します。<p>
-<p>
-
-特定の責務受け持ち、勤労する日課、任用された勤務の仕方、適格に確認して、経験蓄積する成長機会の最中、快適性、確保する環境調節、行います。<p>
-<p>
-
-視界開くと、開始された。進行していく展開。五つ感覚、景色映る。知らない方へゆける経路。創作歴史落とし噺。真剣になり聞き取れる。短期間のうちに引き寄せられる。そんなお話し作り、披露して活躍したい。<p>
+優しい物語と、心に届くナレーションを目指して活動しています。
 
 </p>
 
@@ -453,7 +255,7 @@ BGMの再生。
 
 <p>
 
-最新の更新はこちらに掲載します。
+最新の更新情報はこちらに掲載します。
 
 </p>
 
@@ -469,12 +271,7 @@ BGMの再生。
 
 <p>
 
-依頼・お問い合わせ。<p>
-
-https://x.com/wakanatyan5<p>
-
-yurakiwakana@gmail.com
-
+ご依頼・お問い合わせは準備中です。
 
 </p>
 
@@ -485,19 +282,28 @@ yurakiwakana@gmail.com
 </main>
 
 </div>
+<!-- 🎵 BGM -->
+<div class="card">
 
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+<h2>🎵 BGM</h2>
 
-<img id="lightbox-img" src="" alt="拡大画像">
+<select id="bgmSelect">
+    <option value="music/bgm1.mp3">BGM 1</option>
+    <option value="music/bgm2.mp3">BGM 2</option>
+    <option value="music/bgm3.mp3">BGM 3</option>
+</select>
+
+<button onclick="playBGM()">▶ 再生</button>
+<button onclick="stopBGM()">⏹ 停止</button>
+
+<audio id="bgmPlayer" loop></audio>
 
 </div>
+
 
 <script src="script.js"></script>
 
 </body>
 
+
 </html>
-
-
-
-

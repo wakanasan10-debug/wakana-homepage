@@ -22,47 +22,61 @@ window.onload=function(){
 
 };
 
-// ===== ギャラリー画像をクリックすると拡大 =====
+/* ===== BGM ===== */
 
-const galleryImages = document.querySelectorAll(".gallery img");
+const musicList = [
+    { title: "bgm01.mp3", file: "music/bgm01.mp3" },
+    { title: "bgm02.mp3", file: "music/bgm02.mp3" },
+    { title: "bgm03.mp3", file: "music/bgm03.mp3" }
+];
 
-galleryImages.forEach(function(img){
+const bgmPlayer = document.getElementById("bgmPlayer");
+const bgmSelect = document.getElementById("bgmSelect");
+const nowPlaying = document.getElementById("nowPlaying");
+const volumeControl = document.getElementById("volumeControl");
 
-    img.addEventListener("click", function(){
+musicList.forEach((music, index) => {
 
-        document.getElementById("lightbox-img").src = this.src;
+    const option = document.createElement("option");
 
-        document.getElementById("lightbox").style.display = "flex";
+    option.value = index;
 
-    });
+    option.textContent = music.title;
+
+    bgmSelect.appendChild(option);
 
 });
 
-function closeLightbox(){
+bgmPlayer.volume = 0.5;
 
-    document.getElementById("lightbox").style.display = "none";
+function playBGM(){
+
+    const music = musicList[bgmSelect.value];
+
+    bgmPlayer.src = music.file;
+
+    bgmPlayer.play();
+
+    nowPlaying.textContent = "♪ 再生中 : " + music.title;
+
+}
+
+function pauseBGM(){
+
+    bgmPlayer.pause();
 
 }
 
-// ===== BGM再生・停止 =====
+function stopBGM(){
 
-const bgm = document.getElementById("bgm");
-const bgmButton = document.getElementById("bgmButton");
+    bgmPlayer.pause();
 
-function toggleBGM() {
-
-    if (bgm.paused) {
-
-        bgm.play();
-
-        bgmButton.textContent = "⏸️ BGMを停止";
-
-    } else {
-
-        bgm.pause();
-
-        bgmButton.textContent = "🎵 BGMを再生";
-
-    }
+    bgmPlayer.currentTime = 0;
 
 }
+
+volumeControl.addEventListener("input", function(){
+
+    bgmPlayer.volume = this.value;
+
+});
