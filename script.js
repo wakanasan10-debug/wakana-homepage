@@ -53,17 +53,16 @@ function playBGM(){
 
     const music = musicList[Number(bgmSelect.value)];
 
-    bgmPlayer.pause();
-    bgmPlayer.currentTime = 0;
+    // 同じ曲ならそのまま再生
+    if (bgmPlayer.getAttribute("src") !== music.file) {
+        bgmPlayer.src = music.file;
+    }
 
-    bgmPlayer.src = music.file;
+    bgmPlayer.play();
 
-    bgmPlayer.load();
+    nowPlaying.textContent = "♪ 再生中 : " + music.title;
 
-    bgmPlayer.oncanplaythrough = function () {
-        bgmPlayer.play();
-        nowPlaying.textContent = "♪ 再生中 : " + music.title;
-    };
+}
 
 }
 function pauseBGM(){
