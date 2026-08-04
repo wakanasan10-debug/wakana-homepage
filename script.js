@@ -51,9 +51,13 @@ bgmPlayer.volume = 0.5;
 
 function playBGM(){
 
-    const music = musicList[bgmSelect.value];
+    const music = musicList[Number(bgmSelect.value)];
+
+    bgmPlayer.pause();
 
     bgmPlayer.src = music.file;
+
+    bgmPlayer.load();
 
     bgmPlayer.play();
 
