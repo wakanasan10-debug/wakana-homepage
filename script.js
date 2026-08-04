@@ -54,17 +54,18 @@ function playBGM(){
     const music = musicList[Number(bgmSelect.value)];
 
     bgmPlayer.pause();
+    bgmPlayer.currentTime = 0;
 
     bgmPlayer.src = music.file;
 
     bgmPlayer.load();
 
-    bgmPlayer.play();
-
-    nowPlaying.textContent = "♪ 再生中 : " + music.title;
+    bgmPlayer.oncanplaythrough = function () {
+        bgmPlayer.play();
+        nowPlaying.textContent = "♪ 再生中 : " + music.title;
+    };
 
 }
-
 function pauseBGM(){
 
     bgmPlayer.pause();
