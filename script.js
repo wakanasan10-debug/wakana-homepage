@@ -53,10 +53,12 @@ function playBGM(){
 
     const music = musicList[Number(bgmSelect.value)];
 
-    // 同じ曲ならそのまま再生
-    if (bgmPlayer.getAttribute("src") !== music.file) {
-        bgmPlayer.src = music.file;
-    }
+    bgmPlayer.pause();
+    bgmPlayer.currentTime = 0;
+
+    bgmPlayer.src = music.file;
+
+    bgmPlayer.load();
 
     bgmPlayer.play();
 
@@ -64,7 +66,6 @@ function playBGM(){
 
 }
 
-}
 function pauseBGM(){
 
     bgmPlayer.pause();
